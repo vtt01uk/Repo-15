@@ -1,0 +1,11 @@
+input {
+  display: block;
+  height: 30px;
+  width: 200px;
+}
+#imgList img {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+}
