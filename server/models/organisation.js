@@ -13,11 +13,11 @@ var OrganisationSchema = new mongoose.Schema({
   contact_number : Number,
   email : String,
   password : String,
-  _kids: [{type: mongoose.Schema.ObjectId, ref: 'Kids'}]
+  _kids: [{type: mongoose.Schema.ObjectId, ref: 'Kids'}],
   created: {type: Date, default: Date.now }
  
 });
 
-mongoose.model('Topic', TopicSchema);
+mongoose.model('Organisation', OrganisationSchema);
 
 
