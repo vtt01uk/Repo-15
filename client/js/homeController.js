@@ -53,7 +53,7 @@ saburiKonnect.controller('homeController', function($scope, $location){
 
 
 	function change(data) {
-
+		console.log(data)
 		/* ------- PIE SLICES -------*/
 		var slice = svg.select(".slices").selectAll("path.slice")
 			.data(pie(data), key);
@@ -142,5 +142,7 @@ saburiKonnect.controller('homeController', function($scope, $location){
 		polyline.exit()
 			.remove();
 	};
+
+	$('.dropdown-toggle').dropdown()
 
 })
