@@ -1,11 +1,11 @@
 var mongoose = require('mongoose');
 var kid = mongoose.model('Kid');
-var organisation = mongooose.model('Organisation');
+var organisation = mongoose.model('Organisation');
 
 module.exports = (function(){
 	return {
 		add_kid: function(req, res){
-			var newKid = new Kid(req.body);
+			var newKid = new kid(req.body);
 			newKid.save(function(err, result){
 				if(err){
 					console.log('error adding');
@@ -14,7 +14,7 @@ module.exports = (function(){
 					res.redirect('');
 				}
 			});
-		}),
+		},
 		get_organisations : function(req,res){
 			organisation.find({},function(err,results){
 				if(err) {
@@ -22,9 +22,9 @@ module.exports = (function(){
 				} else {
 					res.json(results);
 				}		
-			})
+			});
 		}
-	}
+	};
 })();
 
 

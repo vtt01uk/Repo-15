@@ -1,4 +1,5 @@
-var Controller = require('./../server/controllers/controller.js');
+// var Controller = require('./../server/controllers/controller.js');
+var kids = require('./../server/controllers/kids.js')
 
 module.exports = function(app){
     app.post('/add_kid',function(req,res){
@@ -6,6 +7,7 @@ module.exports = function(app){
     });
 
     app.get('/get_organisations',function(req,res){
-    	kids.get_organisations(req,res)
+    	res.json({name: 'Meera'});
+    	// kids.get_organisations(req,res)
     });
 }

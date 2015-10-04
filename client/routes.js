@@ -7,6 +7,10 @@ saburiKonnect.config(function($routeProvider){
 		title: "Home",
 		controller: "homeController"
 	})
+	.when('/addKid',{
+		templateUrl: './partials/newKid.html'
+
+	})
 	.otherwise('/', {
 		redirectTo: '/'
 	})

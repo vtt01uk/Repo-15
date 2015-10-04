@@ -33,6 +33,6 @@ var KidSchema = new mongoose.Schema({
  
 });
 
-mongoose.model('Kid', TopicSchema);
+mongoose.model('Kid', KidSchema);
 
 
