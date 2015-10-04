@@ -1,5 +1,10 @@
 saburiKonnect.controller('homeController', function($scope, $location){
 
+	$scope.year = function() {
+		console.log("clicked")
+		alert("hello")
+	}
+
 	var svg = d3.select("#chart")
 	.append("svg")
 	.append("g")
@@ -143,9 +148,12 @@ saburiKonnect.controller('homeController', function($scope, $location){
 			.remove();
 	};
 
-	$scope.year = function() {
-		console.log("clicked")
-		alert("hello")
-	}
+	$('#loginModalSponsor').on('shown.bs.modal', function () {
+	  $('#myInput').focus()
+	})
+
+	$('#registerModalSponsor').on('shown.bs.modal', function () {
+	  $('#myInput').focus()
+	})
 
 })
