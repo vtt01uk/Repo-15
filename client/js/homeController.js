@@ -143,6 +143,9 @@ saburiKonnect.controller('homeController', function($scope, $location){
 			.remove();
 	};
 
-	$('.dropdown-toggle').dropdown()
+	$scope.year = function() {
+		console.log("clicked")
+		alert("hello")
+	}
 
 })
