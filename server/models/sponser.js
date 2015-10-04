@@ -17,6 +17,6 @@ var SponserSchema = new mongoose.Schema({
  
 });
 
-mongoose.model('Sponser', TopicSchema);
+mongoose.model('Sponser', SponserSchema);
 
 

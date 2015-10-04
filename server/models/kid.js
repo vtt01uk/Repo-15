@@ -10,8 +10,8 @@ var KidSchema = new mongoose.Schema({
   mother : String,
   father_occupation : String,
   mother_occupation : String,
-  father_salary : Number,
-  mother_salary : Number,
+  father_income : Number,
+  mother_income : Number,
   total_income : Number,
   age : Number,
   tenth_grade_score : Number,
@@ -33,6 +33,6 @@ var KidSchema = new mongoose.Schema({
  
 });
 
-mongoose.model('Kid', TopicSchema);
+mongoose.model('Kid', KidSchema);
 
 
