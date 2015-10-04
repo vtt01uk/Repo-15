@@ -45,8 +45,14 @@
 		<input type="text" ng-model="newkid.proposed_expense"><br>
 		<label>Fees Paid</label>
 		<input type="text" ng-model="newkid.fees_paid"><br>
+		<label>Story </label>
+		<input type="text" ng-model="newkid.description"><br>
 		<label>Hostel Accomodation </label>
 		<input type="text" ng-model="newkid.accomodation"><br>
+		<label>Organisation</label>
+			<select ng-repeat="organisation in organisations">
+				<option ng-model="newKid.organisation" ng-bind="organisation.id"></option>
+			</select><br>
 
 		<button type="submit" ng-click="addKid()">Add Kiddo</button>
 	</form>
