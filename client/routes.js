@@ -4,7 +4,8 @@ saburiKonnect.config(function($routeProvider){
 	return $routeProvider
 	.when('/', {
 		templateUrl: './partials/home.html',
-		title: "Home"
+		title: "Home",
+		controller: "homeController"
 	})
 	.otherwise('/', {
 		redirectTo: '/'
